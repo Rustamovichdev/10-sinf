@@ -11,4 +11,7 @@ def bolish(a, b):
     return a / b
 def daraja(a, b):
     return a ** b
-
+def ildiz(a, b):
+    if a < 0 and b % 2 == 0:
+        return "Musbat ildizni olish mumkin emas"
+    return a ** (1 / b)
