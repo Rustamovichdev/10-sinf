@@ -148,5 +148,3 @@ def harmonik_orta(*args):
         reciprocal_sum += 1 / num
     return len(args) / reciprocal_sum
 
-
-# --------------------------------------------Dars-------------------------------------
