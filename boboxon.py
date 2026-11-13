@@ -147,3 +147,6 @@ def harmonik_orta(*args):
             return "Harmonik o'rtani hisoblash uchun nol bo'lmasligi kerak"
         reciprocal_sum += 1 / num
     return len(args) / reciprocal_sum
+
+
+# --------------------------------------------Dars-------------------------------------
