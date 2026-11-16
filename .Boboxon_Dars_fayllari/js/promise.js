@@ -40,13 +40,33 @@ promise.then((message) => {
     console.log(error);
 });
 
-async function Javob() {
-    console.log("Javob kutilyapti...");
-    try {
-        const message = await promise;
-        console.log(message);
-    } catch (error) {
-        console.log(error);
-    }
+async function getProducts() {
+    const res = await fetch("https://dummyjson.com/products");
+    const data = await res.json();
+    console.log(data);
+
     
 }
+getProducts()
+async function postProducts() {
+    const res = await fetch("https://dummyjson.com/products/add", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            title: "iPhone 13",
+            description: "An apple mobile which is nothing like apple",
+            price: 999,
+            discountPercentage: 12.96,
+            rating: 4.69,
+            stock: 94,
+            
+            
+            
+        })
+    });
+    const data = await res.json();
+    console.log(data);
+}
+postProducts()
